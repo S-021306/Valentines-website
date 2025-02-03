@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charsets="UTF-8" />
+        <meta name="viewport"
+        content = "width=device-width,
+        intiial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <title>I LOVE YOU</title>
+    </head>
+    <body>
+        <div class = "container">
+            <div class="tenor-gif-embed" data-postid="12782870542608816906" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/bubu-bubu-dudu-bubbu-bear-bhalu-gif-12782870542608816906">Bubu Bubu Dudu Sticker</a>from <a href="https://tenor.com/search/bubu-stickers">Bubu Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+            <h1>YOU LEAVE ME NO CHOICE >:( </h1>
+                <div class = "button-container">
+                    <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
+                    <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+                    <script>
+                        function nextPage() {
+                            window.location.href = "yes.html";
+                        }
+                        
+                        function moveButton() {
+                            var button = document.getElementById('noButton');
+
+    // Get viewport width and height
+                            var maxX = window.innerWidth - button.offsetWidth - 20; // Keep inside width
+                            var maxY = window.innerHeight - button.offsetHeight - 20; // Keep inside height
+
+    // Generate a safe random position
+                            var x = Math.max(10, Math.random() * maxX);
+                            var y = Math.max(10, Math.random() * maxY);
+
+    // Move the button smoothly
+                            button.style.position = "fixed"; // Keep within viewport
+                            button.style.left = `${x}px`;
+                            button.style.top = `${y}px`;
+                        }
+
+
+                    </script> 
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
